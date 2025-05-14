@@ -24,7 +24,6 @@ const events = [
     title: "Avengers: Endgame",
     type: "movie",
     image: "https://source.unsplash.com/random/800x450?movie",
-    image: "https://source.unsplash.com/random/800x450?movie",
     date: "May 15, 2023",
     location: "AMC Theaters",
     price: "$12.99",
@@ -333,15 +332,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              spotshow 3
-            </motion.h1>
-            <motion.h1 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              spotshow 12
+              spotshow 4
             </motion.h1>
             <motion.p 
               className="text-lg md:text-xl max-w-2xl mx-auto"
@@ -555,7 +546,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">spotshow 3</h3>
+              <h3 className="text-xl font-bold mb-4">spotshow 4</h3>
               <p className="text-surface-300">
                 Your one-stop platform for discovering and booking tickets to the best events in your city.
               </p>
@@ -589,7 +580,7 @@ const Home = () => {
             </div>
           </div>
           <div className="border-t border-surface-700 mt-8 pt-8 text-center text-surface-400">
-            <p>© {new Date().getFullYear()} spotshow 3. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} spotshow 4. All rights reserved.</p>
           </div>
         </div>
       </footer>
