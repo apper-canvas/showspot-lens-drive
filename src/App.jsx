@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { motion, AnimatePresence } from "framer-motion";
+import { UserPreferencesProvider } from "./context/UserPreferencesContext";
 import getIcon from "./utils/iconUtils";
 
 // Pages
@@ -51,30 +52,32 @@ const DarkModeToggle = () => {
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <AnimatePresence mode="wait">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </AnimatePresence>
-      
-      <DarkModeToggle />
-      
-      <ToastContainer
-        position="bottom-right"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="colored"
-        toastClassName="!bg-surface-100 !text-surface-800 dark:!bg-surface-800 dark:!text-surface-100 shadow-soft"
-      />
-    </div>
+    <UserPreferencesProvider>
+      <div className="min-h-screen flex flex-col">
+        <AnimatePresence mode="wait">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </AnimatePresence>
+        
+        <DarkModeToggle />
+        
+        <ToastContainer
+          position="bottom-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+          toastClassName="!bg-surface-100 !text-surface-800 dark:!bg-surface-800 dark:!text-surface-100 shadow-soft"
+        />
+      </div>
+    </UserPreferencesProvider>
   );
 }
 
