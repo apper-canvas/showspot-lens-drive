@@ -7,6 +7,7 @@ import MainFeature from "../components/MainFeature";
 
 // Predefined icon components
 const MapPinIcon = getIcon("MapPin");
+const RefreshCwIcon = getIcon("RefreshCw");
 const CalendarIcon = getIcon("Calendar");
 const SearchIcon = getIcon("Search");
 const ChevronLeftIcon = getIcon("ChevronLeft");
