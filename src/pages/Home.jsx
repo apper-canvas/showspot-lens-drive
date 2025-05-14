@@ -335,6 +335,14 @@ const Home = () => {
             >
               spotshow 1
             </motion.h1>
+            <motion.h1 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              spotshow 12
+            </motion.h1>
             <motion.p 
               className="text-lg md:text-xl max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
@@ -548,6 +556,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-xl font-bold mb-4">spotshow 1</h3>
+              <h3 className="text-xl font-bold mb-4">spotshow 12</h3>
               <p className="text-surface-300">
                 Your one-stop platform for discovering and booking tickets to the best events in your city.
               </p>
@@ -582,6 +591,7 @@ const Home = () => {
           </div>
           <div className="border-t border-surface-700 mt-8 pt-8 text-center text-surface-400">
             <p>© {new Date().getFullYear()} spotshow 1. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} spotshow 12. All rights reserved.</p>
           </div>
         </div>
       </footer>
