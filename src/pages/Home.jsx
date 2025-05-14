@@ -332,7 +332,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              spotshow 4
+              spotshow 5
             </motion.h1>
             <motion.p 
               className="text-lg md:text-xl max-w-2xl mx-auto"
@@ -546,7 +546,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">spotshow 4</h3>
+              <h3 className="text-xl font-bold mb-4">spotshow 5</h3>
               <p className="text-surface-300">
                 Your one-stop platform for discovering and booking tickets to the best events in your city.
               </p>
