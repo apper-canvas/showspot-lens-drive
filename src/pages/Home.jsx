@@ -22,7 +22,7 @@ const events = [
   {
     id: 1,
     title: "Avengers: Endgame",
-    type: "movie",
+              <span className="text-2xl font-bold text-primary">SpotShow</span>
     image: "https://source.unsplash.com/random/800x450?movie",
     date: "May 15, 2023",
     location: "AMC Theaters",
