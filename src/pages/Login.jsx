@@ -29,7 +29,7 @@ function Login() {
         >
           <div className="flex justify-center items-center mb-4">
             <SparklesIcon className="w-8 h-8 text-primary mr-2" />
-            <h1 className="text-3xl font-bold text-primary">spotshow<span className="text-secondary">54</span></h1>
+            <h1 className="text-3xl font-bold text-primary">spotshow<span className="text-secondary">55</span></h1>
           </div>
           <h2 className="text-2xl font-bold text-surface-800 dark:text-surface-100 mb-1">Welcome Back</h2>
           <p className="text-surface-600 dark:text-surface-400">Sign in to access your account</p>
