@@ -143,7 +143,7 @@ const Dashboard = () => {
             <div className="flex items-center">
               <SparklesIcon className="h-8 w-8 text-primary" />
               <h1 className="ml-2 text-2xl font-bold text-surface-900 dark:text-surface-100">
-                spotshot<span className="text-primary">7</span>
+                spotshow<span className="text-primary">45</span>
               </h1>
             </div>
             <div className="flex items-center space-x-4">

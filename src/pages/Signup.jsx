@@ -29,7 +29,7 @@ function Signup() {
         >
           <div className="flex justify-center items-center mb-4">
             <SparklesIcon className="w-8 h-8 text-primary mr-2" />
-            <h1 className="text-3xl font-bold text-primary">spotshot<span className="text-secondary">7</span></h1>
+            <h1 className="text-3xl font-bold text-primary">spotshow<span className="text-secondary">45</span></h1>
           </div>
           <h2 className="text-2xl font-bold text-surface-800 dark:text-surface-100 mb-1">Create Account</h2>
           <p className="text-surface-600 dark:text-surface-400">Join to discover and book amazing events</p>
