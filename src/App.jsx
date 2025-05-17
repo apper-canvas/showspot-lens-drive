@@ -177,7 +177,7 @@ function App() {
     <AuthProvider value={authMethods}>
       <UserPreferencesProvider>
         <div className="min-h-screen flex flex-col">
-          <p>Public Key: {publicKey}</p>
+          <p>Public Key - New: {publicKey}</p>
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/login" element={<Login />} />
