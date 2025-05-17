@@ -67,7 +67,7 @@ function App() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isInitialized, setIsInitialized] = useState(false);
-  const [doamin, setDomain] = useState(null);
+  const [publicKey, setPublicKey] = useState(null);
 
   // Get authentication status
   const userState = useSelector((state) => state.user);
@@ -75,13 +75,13 @@ function App() {
 
   // Initialize ApperUI once when the app loads
   useEffect(() => {
-    setDomain(import.meta.env.DOMAIN);
-
     const { ApperClient, ApperUI } = window.ApperSDK;
     const client = new ApperClient({
       apperProjectId: import.meta.env.VITE_APPER_PROJECT_ID,
       apperPublicKey: import.meta.env.VITE_APPER_PUBLIC_KEY,
     });
+
+    setPublicKey(import.meta.env.VITE_APPER_PUBLIC_KEY);
 
     // Initialize but don't show login yet
     ApperUI.setup(client, {
@@ -177,7 +177,7 @@ function App() {
     <AuthProvider value={authMethods}>
       <UserPreferencesProvider>
         <div className="min-h-screen flex flex-col">
-          <h1>doamin: {doamin}</h1>
+          <p>Public Key: {publicKey}</p>
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/login" element={<Login />} />
